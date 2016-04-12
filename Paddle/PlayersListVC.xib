@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayersListVC" customModule="Paddle" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="nAZ-Ba-W5e" id="xlJ-Rg-JeF"/>
+                <outlet property="tableView" destination="nAZ-Ba-W5e" id="F2p-FD-tSq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,31 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nAZ-Ba-W5e">
-                    <rect key="frame" x="8" y="8" width="584" height="592"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nAZ-Ba-W5e">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" translatesAutoresizingMaskIntoConstraints="NO" id="JBs-It-6bl" customClass="PlayerCell" customModule="Paddle" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="80" width="600" height="44"/>
-                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JBs-It-6bl" id="hb2-h2-yk0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqY-xW-Gfi">
-                                <rect key="frame" x="21" y="11" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </tableViewCellContentView>
-                    <color key="backgroundColor" red="1" green="0.87323347740000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <connections>
-                        <outlet property="cellLabel" destination="hqY-xW-Gfi" id="4pD-hc-Kpo"/>
-                    </connections>
-                </tableViewCell>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nAZ-Ba-W5e" secondAttribute="trailing" id="5TR-9q-8Ve"/>
+                <constraint firstItem="nAZ-Ba-W5e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DdL-QX-Am4"/>
+                <constraint firstAttribute="bottom" secondItem="nAZ-Ba-W5e" secondAttribute="bottom" id="cov-QT-vdH"/>
+                <constraint firstItem="nAZ-Ba-W5e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i5A-1N-yMz"/>
+            </constraints>
         </view>
     </objects>
 </document>

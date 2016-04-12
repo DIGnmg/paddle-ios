@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE3414C01CBC80C100754DA0 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3414BF1CBC80C100754DA0 /* PlayerCell.swift */; };
+		AE3414C41CBC972B00754DA0 /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3414C31CBC972B00754DA0 /* PlayerCell.xib */; };
 		AEE3FB671CB835A20072D527 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3FB651CB835A20072D527 /* PlayerVC.swift */; };
 		AEE3FB681CB835A20072D527 /* PlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE3FB661CB835A20072D527 /* PlayerVC.xib */; };
 		AEFFE0801CB7035D008BCA88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFFE07F1CB7035D008BCA88 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		AE3414BF1CBC80C100754DA0 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		AE3414C31CBC972B00754DA0 /* PlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
 		AEE3FB651CB835A20072D527 /* PlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
 		AEE3FB661CB835A20072D527 /* PlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerVC.xib; sourceTree = "<group>"; };
 		AEFFE07C1CB7035D008BCA88 /* Paddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +71,6 @@
 				AEFFE0861CB7035D008BCA88 /* Assets.xcassets */,
 				AEFFE0881CB7035D008BCA88 /* LaunchScreen.storyboard */,
 				AEFFE08B1CB7035D008BCA88 /* Info.plist */,
-				AE3414BF1CBC80C100754DA0 /* PlayerCell.swift */,
 			);
 			path = Paddle;
 			sourceTree = "<group>";
@@ -87,6 +88,7 @@
 			children = (
 				AEFFE0951CB703E1008BCA88 /* PlayersListVC.xib */,
 				AEE3FB661CB835A20072D527 /* PlayerVC.xib */,
+				AE3414C31CBC972B00754DA0 /* PlayerCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 		AEFFE0931CB70398008BCA88 /* Contollers */ = {
 			isa = PBXGroup;
 			children = (
+				AE3414BF1CBC80C100754DA0 /* PlayerCell.swift */,
 				AEFFE0941CB703E1008BCA88 /* PlayersListVC.swift */,
 				AEE3FB651CB835A20072D527 /* PlayerVC.swift */,
 			);
@@ -161,6 +164,7 @@
 				AEE3FB681CB835A20072D527 /* PlayerVC.xib in Resources */,
 				AEFFE08A1CB7035D008BCA88 /* LaunchScreen.storyboard in Resources */,
 				AEFFE0971CB703E1008BCA88 /* PlayersListVC.xib in Resources */,
+				AE3414C41CBC972B00754DA0 /* PlayerCell.xib in Resources */,
 				AEFFE0871CB7035D008BCA88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

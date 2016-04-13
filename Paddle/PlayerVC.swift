@@ -14,7 +14,7 @@ class PlayerVC: UIViewController {
     
     convenience init(player: Player){
         self.init(nibName: "PlayerVC", bundle: nil)
-        labelText = player.name
+        labelText = player.firstName
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {

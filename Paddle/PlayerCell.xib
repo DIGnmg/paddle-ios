@@ -3,25 +3,43 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" id="s5W-AI-AtN" customClass="PlayerCell" customModule="Paddle" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" id="s5W-AI-AtN" customClass="PlayerCell" customModule="Paddle" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s5W-AI-AtN" id="D79-Xq-ok8">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="s5W-AI-AtN" id="D79-Xq-ok8">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ne-6z-nSi">
-                        <rect key="frame" x="139" y="11" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ne-6z-nSi">
+                        <rect key="frame" x="16" y="11" width="296" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="1" green="0.87323347740000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="centerY" secondItem="D79-Xq-ok8" secondAttribute="centerY" id="C1N-nD-muJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1Ne-6z-nSi" secondAttribute="bottom" constant="3.5" id="MbH-qm-5ad"/>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="trailing" secondItem="D79-Xq-ok8" secondAttribute="trailingMargin" id="Nnm-4a-BzH"/>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="trailing" secondItem="D79-Xq-ok8" secondAttribute="trailingMargin" id="Ubb-UK-SSc"/>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="leading" secondItem="D79-Xq-ok8" secondAttribute="leadingMargin" constant="8" id="XvV-Id-EMk"/>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="top" secondItem="D79-Xq-ok8" secondAttribute="topMargin" constant="3" id="Yk3-nS-Tc2"/>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="centerX" secondItem="D79-Xq-ok8" secondAttribute="centerX" id="pnX-FF-1aR"/>
+                    <constraint firstItem="1Ne-6z-nSi" firstAttribute="leading" secondItem="D79-Xq-ok8" secondAttribute="leadingMargin" constant="20" id="z5q-F4-VHW"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="C1N-nD-muJ"/>
+                        <exclude reference="Ubb-UK-SSc"/>
+                        <exclude reference="pnX-FF-1aR"/>
+                        <exclude reference="z5q-F4-VHW"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellLabel" destination="1Ne-6z-nSi" id="FW0-RY-wGQ"/>

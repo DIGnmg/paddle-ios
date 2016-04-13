@@ -25,6 +25,8 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="nAZ-Ba-W5e" secondAttribute="trailing" id="5TR-9q-8Ve"/>
                 <constraint firstItem="nAZ-Ba-W5e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DdL-QX-Am4"/>
+                <constraint firstItem="nAZ-Ba-W5e" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KdJ-fJ-aLr"/>
+                <constraint firstItem="nAZ-Ba-W5e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Lw1-lA-y8V"/>
                 <constraint firstAttribute="bottom" secondItem="nAZ-Ba-W5e" secondAttribute="bottom" id="cov-QT-vdH"/>
                 <constraint firstItem="nAZ-Ba-W5e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i5A-1N-yMz"/>
             </constraints>

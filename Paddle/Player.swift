@@ -9,15 +9,23 @@
 import UIKit
 
 class Player: NSObject {
-    private var _name = "Player"
+    private var _firstName: String!
+    private var _lastName: String!
     
-    var name: String {
+    var firstName: String {
         get {
-            return _name
+            return _firstName
         }
     }
     
-    init(name:String) {
-        self._name = name
+    var lastName: String {
+        get {
+            return _lastName
+        }
+    }
+    
+    init(firstName:String, lastName:String) {
+        self._firstName = firstName
+        self._lastName = lastName
     }
 }
